@@ -1,0 +1,397 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+ height: 100%;
+}
+
+body { 
+    background: url('../img/branch.png') top left no-repeat,
+    url('../img/branch2.png') bottom right no-repeat;
+    background-attachment: fixed;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    color: #ffffff;
+}
+
+h1 {
+    padding-top: 2rem;
+}
+
+.container-fluid {
+    background: rgba(227,175,228, 0.5);
+    min-height: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+
+.navbar {
+    background: #fbc3e7;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-container {
+  position: relative;
+  margin: auto;
+}
+
+
+a, a:hover {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+
+li {
+    padding-right: 1rem;
+}
+
+li > a, .footer a {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+li > a:after, .footer a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: .25rem;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+}
+
+li > a:hover:after, .footer a:hover:after {
+    width: 100%;
+    background: #ce56a3;
+}
+
+li > a:active, .footer a:active {
+    color: #ce56a3;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+
+.social a:hover:after {
+    background: none;
+}
+
+.social a:active {
+    color: #ffffff;
+
+}
+
+.social {
+    padding-bottom: 1rem;
+}
+
+ .footer-container {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: auto;
+  background: none;
+  font-size: 1.25rem;
+  text-align: center;
+
+}
+
+ .invisible {
+      margin-bottom: 8em;
+  }
+
+
+  .btn:hover {
+      background-color: #ce56a3;
+      color: #ffffff;
+  }
+
+  .btn {
+       text-transform: none;
+      background-color: #fbc3e7;
+      color: #ffffff;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+    .btn:hover {
+      background-color: #ce56a3;
+      color: #ffffff;
+  }
+
+
+  .btn-2 {
+    text-transform: none;
+    font-size: 1.25rem;
+	background: #ce56a3;
+	color: #fff;
+	box-shadow: 0 6px #af488a;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+    margin-top: 2em;
+}
+
+.btn-2c:hover {
+	box-shadow: 0 4px #af488a;
+	top: 2px;
+}
+
+.btn-2c:active {
+	box-shadow: 0 0 #af488a;
+	top: 6px;
+}
+
+
+.control-label {
+    font-size: 1.25rem;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal-body {
+  color: #ce56a3;
+  text-shadow: none;
+  text-align: center;
+  width: 75%;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -o-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+  background-color: #fbc3e7;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+  border-top: 1px solid #eceeef;
+}
+
+.modal-footer > :not(:first-child) {
+  margin-left: .25rem;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-right: .25rem;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #ce56a3;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+
+.close:focus, .close:hover {
+  color: #ce56a3;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+
+.modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
+@media (max-width: 765px){
+  .nav-link, .footer a {
+    font-size: 1rem;
+  }
+
+  .btn {
+      font-size: 1rem;
+      margin: 2em 4em;
+      padding: 1em 2em;
+  }
+
+  .footer-container {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .footer {
+    position: absolute;
+    font-size: 1rem;
+  }
+
+  .extend {
+      margin-top: 12em;
+  }
+
+  .control-label {
+      font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+

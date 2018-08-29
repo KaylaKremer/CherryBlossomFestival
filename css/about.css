@@ -1,0 +1,250 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+ height: 100%;
+}
+
+body { 
+    background: url('../img/branch.png') top left no-repeat,
+    url('../img/branch2.png') bottom right no-repeat;
+    background-attachment: fixed;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    color: #ffffff;
+}
+
+h1 {
+    padding-top: 2rem;
+}
+
+.container-fluid {
+    background: rgba(227,175,228, 0.5);
+    min-height: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.container {
+  width: 70%;
+}
+
+.carousel img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+
+.navbar {
+    background: #fbc3e7;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-container {
+  position: relative;
+  margin: auto;
+}
+
+
+a, a:hover {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+
+li {
+    padding-right: 1rem;
+}
+
+li > a, .footer a {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+li > a:after, .footer a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: .25rem;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+}
+
+li > a:hover:after, .footer a:hover:after {
+    width: 100%;
+    background: #ce56a3;
+}
+
+li > a:active, .footer a:active {
+    color: #ce56a3;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+
+.social a:hover:after {
+    background: none;
+}
+
+.social a:active {
+    color: #ffffff;
+
+}
+
+.social {
+    padding-bottom: 1rem;
+}
+
+ .footer-container {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: auto;
+  background: none;
+  font-size: 1.25rem;
+  text-align: center;
+
+}
+
+ .invisible {
+      margin-bottom: 8em;
+  }
+
+
+  .btn:hover {
+      background-color: #ce56a3;
+      color: #ffffff;
+  }
+
+  .btn {
+       text-transform: none;
+      background-color: #fbc3e7;
+      color: #ffffff;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+    .btn:hover {
+      background-color: #ce56a3;
+      color: #ffffff;
+  }
+
+
+  .btn-2 {
+    text-transform: none;
+    font-size: 1.25rem;
+	background: #ce56a3;
+	color: #fff;
+	box-shadow: 0 6px #af488a;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+    margin-top: 2em;
+}
+
+.btn-2c:hover {
+	box-shadow: 0 4px #af488a;
+	top: 2px;
+}
+
+.btn-2c:active {
+	box-shadow: 0 0 #af488a;
+	top: 6px;
+}
+
+
+.control-label {
+    font-size: 1.25rem;
+}
+
+.about {
+  background-color: #ce56a3;
+  color: #ffffff;
+  text-shadow: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 67.5%;
+}
+
+.about a {
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+
+@media (max-width: 765px){
+  .nav-link, .footer a {
+    font-size: 1rem;
+  }
+
+  .btn {
+      font-size: 1rem;
+      margin: 2em 4em;
+      padding: 1em 2em;
+  }
+
+  .footer-container {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .footer {
+    position: absolute;
+    font-size: 1rem;
+  }
+
+  .extend {
+      margin-top: 7em;
+  }
+
+  .control-label {
+      font-size: 1rem;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
