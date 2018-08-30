@@ -8,8 +8,8 @@ html, body {
 }
 
 body { 
-    background: url('../img/branch.png') top left no-repeat,
-    url('../img/branch2.png') bottom right no-repeat;
+    background: url('../img/branch-left.png') top left no-repeat,
+    url('../img/branch-right.png') bottom right no-repeat;
     background-attachment: fixed;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
     color: #ffffff;
@@ -285,11 +285,15 @@ li > a:active, .footer a:active {
   position: relative;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  padding: 15px;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 3rem;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .modal-footer {
@@ -357,6 +361,19 @@ table {
   padding: 1em;
 }
 
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.table-responsive {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .table th,
 .table td {
   padding: 0.75rem;
@@ -404,7 +421,22 @@ th {
 }
 
 .center {
-  width: 70%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 15rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 
